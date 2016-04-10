@@ -1,0 +1,35 @@
+<section class="clients">
+    
+    <h3 id="clients">Clients</h3>
+    
+    <div class="client-ctrl">
+    
+        <div class="ctrl-prv">{% include icons/icon-prv.html %}</div>
+        <div class="ctrl-nxt">{% include icons/icon-nxt.html %}</div>
+        
+    </div>
+    
+    <div class="client-belt">
+        {% for client in site.data.settings.clients %}
+        <div class="client-unit">
+            <div class="client-face">
+                <img src="assets/img/clients/{{ client.avatar }}" alt="face">
+                <strong class="client-name">{{ client.name }}</strong>
+                <em class="client-desc">{{ client.title }}</em>
+            </div>
+            <div class="client-text">
+                <div class="ico-quote">{% include icons/icon-quote-mark.html %} </div>
+                <p>{{ client.quote }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    
+    <div class="client-logo">
+        {% for client in site.data.settings.clients %}
+            <div class="tm" style="background-image: url(/assets/img/clients/{{ client.logo }})"></div>
+        {% endfor %}
+    </div>
+
+
+</section>
