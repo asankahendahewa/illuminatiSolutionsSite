@@ -1,0 +1,113 @@
+.work
+    background: $bgcolor
+    overflow-x: hidden
+
+.work-folder
+    width: 200%
+    background: aqua
+    position: relative
+    left: 0%
+    +transition(all 500ms) 
+    
+    
+.showcase-wrap, .store-wrap
+    width: 50%
+    float: left
+    
+.showcase
+    max-width: 960px
+    margin: 0px auto
+    padding-bottom: 100px
+    +clearfix
+    
+    .thumb
+        display: block
+        width: 25%
+        padding-top: 18%
+        position: relative
+        float: left
+        overflow: hidden
+        
+        background:
+            //image: url(/assets/img/work/Proj-01/thumb.jpg)
+            position: center center
+            repeat: no-repeat
+            size: cover
+            perspective: 1000
+            
+        .slider
+            +position(absolute, 0% 0px null 0px)
+            height: 100%
+            background: fade-out($accent,0.8)
+            text-align: center
+            +display(flex)
+            +align-items(center)
+            +justify-content(space-around)
+            +transform(matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1))
+            
+            strong
+                display: block
+                padding: 20px 20px
+                color: $accent
+                font-weight: 300
+                font-size: 24px
+                text-transform: uppercase
+                line-height: 1.2
+                cursor: pointer
+            
+        &:hover .slider
+            @extend %animation-target
+            
+            
+     
+        @media screen and (max-width: 720px)
+            .thumb
+                width: 50%
+                padding-top: 20%
+                
+                            
+                    
+            .slider
+                width: 50%
+                padding-top: 20%
+                
+.store
+    max-width: 600px
+    margin: 0px auto
+    position: relative
+    display: none
+    
+    .work-title
+        color: $accent
+        font-weight: 300
+        font-size: 24px
+        text-transform: uppercase
+        line-height: 1.2
+        //margin-left: 50px
+        margin-top: 31.267px
+        padding-top: 6px
+        
+    
+    .img
+        max-width: 100%
+        margin-bottom: 20px
+        
+        
+    .return
+        +size(40px)
+        cursor: pointer
+        opacity: 0.7
+        +position(relative, 70px null null -60px)
+        //margin-left: -40px
+        path
+            fill: $accent
+        &:hover
+            opacity: 1
+        
+    
+        
+@media screen and (max-width: 720px)
+    .inwork
+        margin-left: auto
+        margin-right: auto
+        width: 6em

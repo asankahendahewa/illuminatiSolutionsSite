@@ -1,0 +1,33 @@
+<section class="work">
+    
+    <h3 id="work">Work</h3>
+    
+    <div class="work-folder">
+        
+        <div class="showcase-wrap">
+            <div class="showcase">        
+                {% for project in site.data.settings.projects %}
+                <a class="thumb" data-folder="{{ project.folder }}" style="background-image: url(assets/img/work/{{ project.folder }}/thumb.jpg)" onclick="workfolder()">  
+                    <div class="slider">                
+                        <strong class="cato">{{ project.name }}</strong>                
+                    </div>        
+                </a> 
+                {% endfor %}        
+            </div>
+        </div>
+        
+        <div class="store-wrap">
+            <div class="store">
+                <div class="inwork">
+                    <div class="return">{% include icons/icon-back.html %}</div>
+                    <h4 class="work-title"></h4>
+                </div>
+                
+                <div class="store-load"></div>
+                
+            </div>
+        </div>
+        
+    </div>
+
+</section>

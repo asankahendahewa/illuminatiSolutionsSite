@@ -1,0 +1,91 @@
+.clients
+    position: relative
+
+.client-belt
+    width: 100%
+    position: relative
+        
+    .client-unit
+        max-width: 75%
+        +position(absolute, 0px null null 50%)
+        z-index: 1
+        margin: 0 0 50px -37.5%
+        +display(none)
+            
+        &.active-client
+            +display(flex)
+            @extend %animation-target
+        
+        .client-face
+            min-width: 300px
+            text-align: center
+            
+            img
+                max-width: 128px
+                border-radius: 50%
+            
+            .client-name
+                display: block
+                text-transform: uppercase
+                font-weight: 400
+                letter-spacing: 1px
+                
+            .client-desc
+                font-style: normal
+                font-size: 12px
+                color: #999
+                
+            
+        .client-text
+            max-width: 60%
+            font-size: 18px
+            line-height: 36px
+            font-width: 300px
+            margin-top: 10px
+            +position(relative)
+                
+        .ico-quote
+            +position(absolute,-20px null null -15px)
+            +size(60px)
+            z-index: -1
+            opacity: 0.3
+
+            path
+                fill: $accent
+            
+.client-logo
+    position: relative
+    max-width: 75%
+    margin: 280px auto 100px
+    +display(flex)
+    +align-items(space-around)
+    +justify-content(center)
+
+    .tm
+        height: 80px
+        min-width: 18%
+        background:
+            //image: url(/assets/img/clients/logo1.png)
+            size: contain
+            position: center
+            repeat: no-repeat
+        cursor: pointer
+        padding: 0px 20px 0px
+        
+        &.active-client
+            box-shadow: 0px 4px 0px $accent
+
+    
+        
+        
+.client-ctrl
+    +position(absolute, 0px 0px 0px 0px)
+    +size(100%)
+    >div
+        +size(40px)
+        
+    .ctrl-nxt
+        +position(absolute, 50% 10px null null)
+        
+    .ctrl-prv
+        +position(absolute, 50% null null 10px)

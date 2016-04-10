@@ -1,0 +1,20 @@
+#site settings
+title: illusions
+email: asankahendahewa@gmail.com
+description: developer // Photograper // Blogger // thinker
+
+
+
+# Build settings
+
+markdown: kramdown
+permalink: pretty
+
+
+port: 8070
+
+
+
+sass:
+  sass_dir: assets/css
+  style: :nested

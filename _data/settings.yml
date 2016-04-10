@@ -1,0 +1,48 @@
+#-------------------------------
+# About Section
+
+    #links
+
+link-fb: https://www.facebook.com/asankahendahewa
+link-twtr: https://twitter.com/AsankaHH
+link-gp: https://plus.google.com/+AsankaHendahewa
+link-linkdin: https://lk.linkedin.com/in/asankahendahewa
+
+# NOTE: The avatar is defined in the all.sass document.
+
+skills:
+- {name: Communication, value: '9'}
+- {name: Organizing, value: '7'}
+- {name: Learning, value: '10'}
+- {name: Leadership, value: '9'}
+- {name: Programming, value: '7'}
+- {name: Photography, value: '8'}
+- {name: UX Design, value: '5'}
+- {name: Team Work, value: '6'}
+
+
+#-------------------------------
+# Work Section
+
+projects:
+- {name: sunsets, folder: 'proj-01'}
+- {name: Flowers, folder: 'proj-02'}
+- {name: Landscapes, folder: 'proj-03'}
+- {name: Fire Works, folder: 'proj-04'}
+- {name: Black and white, folder: 'proj-05'}
+- {name: The Eyes, folder: 'proj-06'}
+- {name: insects, folder: 'proj-07'}
+- {name: HDR, folder: 'proj-08'}
+
+
+
+#-------------------------------
+# Client Section
+
+clients:
+- {avatar: face-jackiesaik.jpg, name: 'Pavani Lakshika', title: 'Assistant Marketing Manager,Godrej', quote: '<strong>Lorem ipsum dolor sit amet, </strong>consectetur adipiscing elit. Vestibulum non tortor et turpis mattis porta. In hac habitasse platea dictumst. Duis sit amet ex eget massa hendrerit sodales ut quis ante. Donec tincidunt venenatis fermentum. Vestibulum non justo in augue vehicula posuere non quis lorem. Nulla eget mattis mauris. Ut. ',logo: 'logo1.png'}
+- {avatar: face-aaroni.jpg, name: 'Aaroni', title: 'Someone', quote: '<strong>hey</strong>consectetur adipiscing elit. Vestibulum non tortor et turpis mattis porta. In hac habitasse platea dictumst. Duis sit amet ex eget massa hendrerit sodales ut quis ante. Donec tincidunt venenatis fermentum. Vestibulum non justo in augue vehicula posuere non quis lorem. Nulla eget mattis mauris. Ut. ', logo: 'logo2.png'}
+- {avatar: face-atariboy.jpg, name: 'Beard Man', title: 'President, Bearders', quote: '<strong>Good, </strong>consectetur adipiscing elit. Vestibulum non tortor et turpis mattis porta. In hac habitasse platea dictumst. Duis sit amet ex eget massa hendrerit sodales ut quis ante. Donec tincidunt venenatis fermentum. Vestibulum non justo in augue vehicula posuere non quis lorem. Nulla eget mattis mauris. Ut. ', logo: 'logo3.png' }
+- {avatar: face-teleject.jpg, name: 'One th last', title: 'I dont know', quote: '<strong>Boo yeah </strong>consectetur adipiscing elit. Vestibulum non tortor et turpis mattis porta. In hac habitasse platea dictumst. Duis sit amet ex eget massa hendrerit sodales ut quis ante. Donec tincidunt venenatis fermentum. Vestibulum non justo in augue vehicula posuere non quis lorem. Nulla eget mattis mauris. Ut. ', logo: 'logo4.png'}
+
+
